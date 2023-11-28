@@ -35,7 +35,6 @@ def unconcealed_count(modulus, exponent):
     return sum(pow(m, exponent, modulus) == m for m in range(modulus))
 
 
-# 示例用法
 primes = (1009, 3643)
 result = calculate_minimal_unconcealed_sum(primes)
 print(f"具有最小未隐藏信息的指数总和: {result}")
